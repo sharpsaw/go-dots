@@ -1,0 +1,9 @@
+export GOROOT=$HOME/.go/src
+export GOBIN=$HOME/.go/bin
+for n in $GOROOT $GOBIN; do mkdir -p $GOBIN; done
+...path-prepend $GOBIN
+
+# These don't have to be set. See:
+#   http://golang.org/doc/install/source#environment
+#export GOARCH=amd64
+#export GOOS=linux
